@@ -3,92 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CastAiStars | The Digital Backlot</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Koinonia Grace Foundation - Advancing Foster Care Integrity in Philadelphia. Spawned from Tbblusa.org.">
+    <title>Koinonia Grace Foundation | Philadelphia Foster Care Excellence</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #000; }
-        
-        /* Nebula Pulse Animation */
-        @keyframes nebula-pulse {
-            0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.4)); }
-            50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.8)); }
-            100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.4)); }
+        :root {
+            --primary-gold: #c5a059;
+            --gold-hover: #e0bc7a;
+            --deep-black: #0f0f0f;
+            --off-black: #1a1a1a;
+            --pure-white: #ffffff;
+            --slate-gray: #71717a;
+            --soft-cream: #fafafa;
+            --border-color: #2e2e2e;
         }
-        .nebula-star {
-            animation: nebula-pulse 4s ease-in-out infinite;
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Top Accessibility & Login Bar (Government Standard) */
+        .top-bar {
+            background: #000;
+            color: white;
+            font-size: 0.75rem;
+            padding: 8px 5%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--primary-gold);
         }
-        .text-gradient {
-            background: linear-gradient(to right, #ffffff, #00e5ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .top-bar a { color: var(--primary-gold); text-decoration: none; margin-left: 15px; font-weight: 600; }
+
+        /* Navigation Header */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
-        .glass-panel {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .brand-group { display: flex; align-items: center; gap: 15px; }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--pure-white); letter-spacing: 1px; }
+        .logo-text span { color: var(--primary-gold); }
+
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: 0.3s; text-transform: uppercase; letter-spacing: 0.5px; }
+        nav a:hover { color: var(--primary-gold); }
+
+        .cta-group { display: flex; gap: 15px; align-items: center; }
+        .btn-portal { border: 1px solid var(--primary-gold); color: var(--primary-gold); padding: 8px 18px; border-radius: 4px; font-size: 0.85rem; }
+        .btn-donate { background: var(--primary-gold); color: var(--deep-black); padding: 10px 22px; border-radius: 4px; font-weight: 700; box-shadow: 0 4px 10px rgba(197, 160, 89, 0.3); }
+
+        /* Hero: The Philadelphia Promise */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1542210336-d419db458739?q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 15%;
         }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 1.5rem; line-height: 1.1; }
+        .hero p { font-size: 1.25rem; color: #d1d1d1; max-width: 800px; margin-bottom: 2.5rem; }
+
+        /* Institutional Sectioning */
+        .section { padding: 6rem 10%; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--deep-black); }
+        .section-header .divider { width: 60px; height: 4px; background: var(--primary-gold); margin: 15px auto; }
+
+        /* Certification Grid (Digital Products) */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .product-card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 2px; 
+            border-bottom: 4px solid transparent; 
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .product-card:hover { 
+            border-bottom: 4px solid var(--primary-gold);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .badge-icon { color: var(--primary-gold); font-size: 2rem; margin-bottom: 20px; display: block; }
+        .product-card h3 { margin-bottom: 15px; font-family: 'Playfair Display', serif; }
+
+        /* Legal Institutional Footer */
+        footer { background: var(--deep-black); color: #a1a1aa; padding: 80px 10% 40px; border-top: 5px solid var(--primary-gold); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
+        .footer-brand h4 { color: white; font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 20px; }
+        .footer-brand span { color: var(--primary-gold); }
+        .footer-col h5 { color: white; margin-bottom: 25px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; font-size: 0.85rem; }
+        .footer-col a { color: inherit; text-decoration: none; transition: 0.2s; }
+        .footer-col a:hover { color: var(--primary-gold); padding-left: 5px; }
+
+        .legal-row { border-top: 1px solid #27272a; padding-top: 40px; display: flex; justify-content: space-between; font-size: 0.75rem; color: #52525b; }
     </style>
 </head>
-<body class="text-white overflow-x-hidden">
+<body>
 
-    <nav class="fixed w-full z-50 glass-panel">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-cyan-500 rounded flex items-center justify-center nebula-star">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="black"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
-                </div>
-                <span class="text-2xl font-black tracking-tighter uppercase">Cast<span class="text-cyan-400">AI</span>Stars</span>
-            </div>
-            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-gray-400">
-                <a href="#" class="hover:text-cyan-400 transition">The Backlot</a>
-                <a href="#" class="hover:text-cyan-400 transition">For Directors</a>
-                <a href="#" class="hover:text-cyan-400 transition">For Creators</a>
-            </div>
-            <button class="bg-white text-black px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-cyan-400 transition">Beta Access</button>
+    <div class="top-bar">
+        <span>Serving Philadelphia County & Tri-State Communities</span>
+        <div class="auth-links">
+            <a href="compliance.html"><i class="fas fa-shield-alt"></i> Public Disclosure</a>
+            <a href="portal-login.html"><i class="fas fa-user-lock"></i> Secure Member Login</a>
         </div>
-    </nav>
+    </div>
 
-    <section class="relative h-screen flex items-center justify-center pt-20">
-        <div class="absolute inset-0 z-0 opacity-30">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600 rounded-full mix-blend-screen filter blur-[120px] animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-900 rounded-full mix-blend-screen filter blur-[120px] animate-pulse"></div>
+    <header class="main-nav">
+        <div class="brand-group">
+            <div class="logo-text">KOINONIA <span>GRACE</span></div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Foundation Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Institutional Mission</a></li>
+            </ul>
+        </nav>
+        <div class="cta-group">
+            <a href="membership.html" class="btn-portal">Foster Portal</a>
+            <a href="donate.html" class="btn-donate">Contribute</a>
+        </div>
+    </header>
 
-        <div class="relative z-10 text-center max-w-4xl px-6">
-            <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
-                THE FUTURE OF FAME IS <span class="text-gradient">SYNTHETIC.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-10 font-light max-w-2xl mx-auto">
-                Welcome to the Headquarters. Cast verified virtual stars for your next production. Powered by <span class="text-white font-bold">Solomon Kin Records</span>.
-            </p>
-            
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <button class="bg-cyan-500 text-black px-10 py-4 rounded-lg font-black text-lg uppercase tracking-widest hover:bg-cyan-400 shadow-[0_0_20px_rgba(0,229,255,0.4)] transition">Enter the Office</button>
-                <button class="border border-gray-700 hover:border-white px-10 py-4 rounded-lg font-black text-lg uppercase tracking-widest transition">Register a Star</button>
+    <section class="hero">
+        <h1>Ensuring Integrity in <br><span>Foster Care Excellence</span></h1>
+        <p>A Philadelphia-based foundation spawned from the legacy of Tbblusa.org. We implement rigorous certification standards to ensure every child is placed with a protector, not just a provider.</p>
+        <div class="cta-group">
+            <a href="verification.html" class="btn-donate">Explore Certifications</a>
+            <a href="grants.html" class="btn-portal" style="color:white; border-color: white;">Funding Incentives</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>Institutional Certification Suite</h2>
+            <div class="divider"></div>
+            <p>Our digital verification products satisfy and exceed Philadelphia's caregiver competency requirements.</p>
+        </div>
+        <div class="grid">
+            <div class="product-card">
+                <i class="fas fa-award badge-icon"></i>
+                <h3>Integrity Level I</h3>
+                <p>Verifies a non-transactional commitment to child welfare. A core requirement for KGF-backed foster parent applications.</p>
+                <a href="#" style="color: var(--primary-gold); text-decoration: none; font-weight: 700; margin-top: 15px; display: inline-block;">Details & Purchase &rarr;</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-city badge-icon"></i>
+                <h3>Philly Resource Badge</h3>
+                <p>Ensures the candidate is fully integrated into the Philadelphia community support system and DHS navigation.</p>
+                <a href="#" style="color: var(--primary-gold); text-decoration: none; font-weight: 700; margin-top: 15px; display: inline-block;">Details & Purchase &rarr;</a>
+            </div>
+            <div class="product-card">
+                <i class="fas fa-users-cog badge-icon"></i>
+                <h3>Trauma Specialist (Bronze)</h3>
+                <p>Verification of specialized trauma-informed parenting class completion, recognized by our nonprofit partners.</p>
+                <a href="#" style="color: var(--primary-gold); text-decoration: none; font-weight: 700; margin-top: 15px; display: inline-block;">Details & Purchase &rarr;</a>
             </div>
         </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 py-24 border-t border-gray-900">
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="glass-panel p-8 rounded-2xl">
-                <h3 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest">Verified Continuity</h3>
-                <p class="text-gray-400">Our stars maintain visual consistency across every scene. No "uncanny valley," just professional assets.</p>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h4>KOINONIA <span>GRACE</span></h4>
+                <p>Operating as a spiritual and ethical extension of Tbblusa.org (Thin Black and Brown Line USA). Strengthening Philadelphia's most vulnerable lineages.</p>
+                <p style="margin-top: 20px;">123 Philadelphia St,<br>Philadelphia, PA 191XX</p>
             </div>
-            <div class="glass-panel p-8 rounded-2xl">
-                <h3 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest">The Digital Soul</h3>
-                <p class="text-gray-400">Every talent registry includes a unique, consistent Voice ID curated by Solomon Kin Records.</p>
+            <div class="footer-col">
+                <h5>Governance</h5>
+                <ul>
+                    <li><a href="#">Articles of Incorporation</a></li>
+                    <li><a href="#">501(c)(3) Status</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Public Disclosures</a></li>
+                    <li><a href="#">IRS Form 990</a></li>
+                </ul>
             </div>
-            <div class="glass-panel p-8 rounded-2xl">
-                <h3 class="text-cyan-400 font-bold mb-4 uppercase tracking-widest">Smart Licensing</h3>
-                <p class="text-gray-400">Automated casting contracts that protect creators and empower directors in one click.</p>
+            <div class="footer-col">
+                <h5>The Marketplace</h5>
+                <ul>
+                    <li><a href="#">Verification Shop</a></li>
+                    <li><a href="#">Bulk Certifications</a></li>
+                    <li><a href="#">Institutional Licenses</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Grants & Funding</h5>
+                <ul>
+                    <li><a href="#">Incentive Alignment</a></li>
+                    <li><a href="#">Government Entities</a></li>
+                    <li><a href="#">Grantor Log-in</a></li>
+                    <li><a href="#">CSR Partnerships</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer class="py-12 border-t border-gray-900 text-center text-gray-600">
-        <p class="text-xs uppercase tracking-[0.5em]">&copy; 2026 Solomon Kin Records LLC. All Rights Reserved.</p>
+        <div class="legal-row">
+            <div>&copy; 2026 Koinonia Grace Foundation. All rights reserved. Secure Identity Verified.</div>
+            <div>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Use</a> | 
+                <a href="#">Ethics & Whistleblower</a>
+            </div>
+        </div>
     </footer>
 
 </body>
