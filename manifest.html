@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manifest | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --code-bg: #1e1e1e;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #f4f7f6; color: var(--deep-black); padding: 50px 5%; }
+
+        .manifest-wrap { max-width: 1100px; margin: 0 auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .manifest-header { background: var(--deep-black); color: white; padding: 40px; border-bottom: 4px solid var(--primary-gold); }
+        .manifest-header h1 { font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
+
+        .file-table { width: 100%; border-collapse: collapse; }
+        .file-table th { text-align: left; background: #fafafa; padding: 15px 25px; font-size: 0.8rem; text-transform: uppercase; color: #888; border-bottom: 1px solid #eee; }
+        .file-table td { padding: 15px 25px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        
+        .file-name { font-family: 'JetBrains Mono', monospace; color: #d32f2f; font-weight: 600; }
+        .category-tag { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
+        .cat-revenue { background: #e8f5e9; color: #2e7d32; }
+        .cat-legal { background: #fff3e0; color: #ef6c00; }
+        .cat-public { background: #e3f2fd; color: #1976d2; }
+        .cat-internal { background: #f3e5f5; color: #7b1fa2; }
+
+        .instructions { padding: 40px; background: #fffdf5; border-top: 1px solid #eee; }
+        .instructions h3 { margin-bottom: 15px; font-size: 1.1rem; }
+        code { font-family: 'JetBrains Mono', monospace; background: #eee; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+    <div class="manifest-wrap">
+        <div class="manifest-header">
+            <h1>KGF Digital Ecosystem Manifest</h1>
+            <p style="color: var(--primary-gold); font-size: 0.8rem; margin-top: 5px;">Project Version: 1.0.26 | Heritage: Tbblusa.org</p>
+        </div>
+
+        <table class="file-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Category</th>
+                    <th>Primary Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file-name">index.html</td>
+                    <td><span class="category-tag cat-public">Public</span></td>
+                    <td>Main landing page & high-level mission entry.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">grants.html</td>
+                    <td><span class="category-tag cat-revenue">Revenue</span></td>
+                    <td>Alignment matrix for 25 strategic grantors.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">verification.html</td>
+                    <td><span class="category-tag cat-revenue">Revenue</span></td>
+                    <td>Digital product shop for protector certifications.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">membership.html</td>
+                    <td><span class="category-tag cat-internal">Internal</span></td>
+                    <td>Protector dashboard and integrity score tracker.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">partner-login.html</td>
+                    <td><span class="category-tag cat-internal">Internal</span></td>
+                    <td>Government/Grantor secure data repository.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">compliance.html</td>
+                    <td><span class="category-tag cat-legal">Legal</span></td>
+                    <td>501(c)(3) articles and public disclosure docs.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">sitemap.xml</td>
+                    <td><span class="category-tag cat-public">Public</span></td>
+                    <td>Search engine indexing and SEO hierarchy.</td>
+                </tr>
+                <tr>
+                    <td class="file-name">briefing.html</td>
+                    <td><span class="category-tag cat-internal">Internal</span></td>
+                    <td>Printable Board of Directors executive summary.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="instructions">
+            <h3>Standard Operating Procedure (SOP)</h3>
+            <p>1. <strong>Interlinking:</strong> All buttons across the ecosystem must point to the relative paths above (e.g., <code>&lt;a href="grants.html"&gt;</code>).</p>
+            <p>2. <strong>Logo Maintenance:</strong> The <code>KGF.png</code> file must be stored in the root directory for consistent rendering across all 17 templates.</p>
+            <p>3. <strong>Philadelphia SEO:</strong> When deploying, ensure the <code>&lt;meta description&gt;</code> on each page includes localized keywords: <em>Philadelphia Foster Care, Tbblusa Integrity, Koinonia Grace.</em></p>
+        </div>
+    </div>
+
+</body>
+</html>
