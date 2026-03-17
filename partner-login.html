@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Partner Access | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: var(--deep-black); color: var(--pure-white); height: 100vh; display: flex; align-items: center; justify-content: center; }
+
+        .login-card { 
+            background: #1a1a1a; 
+            padding: 60px; 
+            width: 100%; 
+            max-width: 500px; 
+            border-top: 5px solid var(--primary-gold); 
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .login-card img { height: 120px; margin-bottom: 30px; }
+        .login-card h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 10px; color: var(--primary-gold); }
+        .login-card p { font-size: 0.85rem; color: #888; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .form-group { text-align: left; margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.75rem; font-weight: 700; color: var(--primary-gold); margin-bottom: 8px; }
+        .form-group input { 
+            width: 100%; padding: 15px; background: #222; border: 1px solid #333; color: white; border-radius: 2px;
+        }
+        .form-group input:focus { outline: none; border-color: var(--primary-gold); }
+
+        .btn-portal { 
+            display: block; width: 100%; padding: 18px; background: var(--primary-gold); color: var(--deep-black); 
+            text-decoration: none; font-weight: 800; text-transform: uppercase; margin-top: 10px; border: none; cursor: pointer;
+        }
+
+        .portal-footer { margin-top: 30px; font-size: 0.75rem; color: #555; }
+        .portal-footer a { color: var(--primary-gold); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <img src="KGF.png" alt="Koinonia Grace Foundation Logo">
+        <h1>Institutional Partner Access</h1>
+        <p>Grantor & Government Agency Secure Gateway</p>
+
+        <form>
+            <div class="form-group">
+                <label>Institutional ID / Agency Code</label>
+                <input type="text" placeholder="PHL-DHS-XXXX">
+            </div>
+            <div class="form-group">
+                <label>Secure Key</label>
+                <input type="password" placeholder="••••••••••••">
+            </div>
+            <button type="submit" class="btn-portal">Enter Secure Repository</button>
+        </form>
+
+        <div class="portal-footer">
+            <p>Access Restricted to Authorized Stakeholders Only.</p>
+            <p>Spawned from <a href="https://tbblusa.org">Tbblusa.org</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
