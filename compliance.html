@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance & Public Disclosure | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Compliance Content */
+        .container { padding: 4rem 5%; max-width: 1000px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 5rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+        
+        .legal-section { background: white; padding: 40px; margin-bottom: 30px; border-radius: 4px; border-left: 4px solid var(--primary-gold); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .legal-section h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 20px; }
+        
+        .doc-link { display: flex; align-items: center; justify-content: space-between; background: #f9f9f9; padding: 15px 25px; margin-bottom: 10px; border: 1px solid #eee; text-decoration: none; color: var(--deep-black); transition: 0.3s; }
+        .doc-link:hover { border-color: var(--primary-gold); background: #fffcf5; }
+        .doc-link i { color: var(--primary-gold); font-size: 1.2rem; }
+
+        .verification-badge { display: inline-block; padding: 10px 20px; background: var(--deep-black); color: var(--primary-gold); font-weight: 700; border-radius: 2px; margin-top: 20px; font-size: 0.8rem; letter-spacing: 1px; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Compliance & Disclosure</h1>
+            <p>In accordance with Philadelphia and Pennsylvania 501(c)(3) standards, the Koinonia Grace Foundation provides full transparency regarding our organizational structure and legal lineage.</p>
+        </div>
+
+        <section class="legal-section">
+            <h2>Organizational Identity</h2>
+            <p>Verification of our spawned status from <strong>Thin Black and Brown Line USA (Tbblusa.org)</strong>. We maintain the highest levels of integrity as a child welfare advocate.</p>
+            <div class="verification-badge">SECURE IDENTITY VERIFIED</div>
+        </section>
+
+        <section class="legal-section">
+            <h2>Public Documents</h2>
+            <p>Authorized personnel and grantors may view or download our regulatory filings below:</p>
+            
+            <a href="#" class="doc-link">
+                <span><i class="fas fa-file-pdf"></i> Articles of Incorporation (PA Department of State)</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <a href="#" class="doc-link">
+                <span><i class="fas fa-file-pdf"></i> IRS 501(c)(3) Determination Letter</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <a href="#" class="doc-link">
+                <span><i class="fas fa-file-pdf"></i> KGF Organizational Bylaws & Ethics Code</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <a href="#" class="doc-link">
+                <span><i class="fas fa-file-pdf"></i> Conflict of Interest Policy</span>
+                <i class="fas fa-download"></i>
+            </a>
+        </section>
+
+        <section class="legal-section">
+            <h2>Governance & Board</h2>
+            <p>Koinonia Grace Foundation identifies and selects board members based on strict integrity levels and a commitment to Philadelphia’s foster youth.</p>
+            <ul style="list-style: none; margin-top: 20px;">
+                <li style="margin-bottom: 10px;"><strong>Executive Director:</strong> [Name]</li>
+                <li style="margin-bottom: 10px;"><strong>Board of Oversight:</strong> Institutional Integrity Committee</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Institutional Compliance Standards.</p>
+    </footer>
+
+</body>
+</html>
