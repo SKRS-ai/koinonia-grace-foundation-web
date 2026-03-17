@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Center | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Resource Content */
+        .container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 5rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+
+        .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        
+        /* Resource Cards */
+        .resource-card { background: white; padding: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; transition: 0.3s; }
+        .resource-card:hover { transform: translateY(-5px); }
+        .resource-img { width: 100%; height: 200px; background: #222; display: flex; align-items: center; justify-content: center; color: var(--primary-gold); font-size: 3rem; }
+        .resource-info { padding: 30px; }
+        .resource-info h3 { font-family: 'Playfair Display', serif; margin-bottom: 15px; font-size: 1.4rem; }
+        .resource-info p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+        
+        .tag { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--primary-gold); margin-bottom: 10px; display: block; }
+        .btn-link { font-weight: 700; color: var(--deep-black); text-decoration: none; border-bottom: 2px solid var(--primary-gold); padding-bottom: 2px; transition: 0.3s; }
+        .btn-link:hover { color: var(--primary-gold); }
+
+        /* Community Partners Area */
+        .partners-bar { background: white; padding: 60px 5%; margin-top: 60px; text-align: center; }
+        .partners-bar h2 { font-family: 'Playfair Display', serif; margin-bottom: 40px; }
+        .partner-logos { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; opacity: 0.6; filter: grayscale(1); }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Resource & Advocacy</h1>
+            <p>Advancing Philadelphia's foster care standards through institutional knowledge and cultural competency.</p>
+        </div>
+
+        <div class="resource-grid">
+            <div class="resource-card">
+                <div class="resource-img"><i class="fas fa-book-reader"></i></div>
+                <div class="resource-info">
+                    <span class="tag">Guidebook</span>
+                    <h3>The Protector’s Handbook</h3>
+                    <p>A comprehensive guide on navigating the first 90 days of placement with an integrity-first mindset.</p>
+                    <a href="#" class="btn-link">Read More</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-img"><i class="fas fa-shield-virus"></i></div>
+                <div class="resource-info">
+                    <span class="tag">Clinical Insight</span>
+                    <h3>Trauma-Informed Care 101</h3>
+                    <p>Understanding the "Spawn of Displacement" and how to provide a stable spiritual and emotional home.</p>
+                    <a href="#" class="btn-link">Read More</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-img"><i class="fas fa-map-marked-alt"></i></div>
+                <div class="resource-info">
+                    <span class="tag">Philly Local</span>
+                    <h3>The Resource Map</h3>
+                    <p>A directory of Philadelphia support services, from food security to specialized counseling for foster youth.</p>
+                    <a href="#" class="btn-link">Explore Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="partners-bar">
+        <h2>Affiliated Advocacy Groups</h2>
+        <div class="partner-logos">
+            <span>Philadelphia DHS (Advisory)</span>
+            <span>Tbblusa.org Heritage</span>
+            <span>Youth Integrity Alliance</span>
+            <span>Philly Faith-Based Network</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Empowering Protectors.</p>
+    </footer>
+
+</body>
+</html>
