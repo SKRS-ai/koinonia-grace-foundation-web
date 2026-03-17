@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Alignment | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Consistent Header Styling */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Grant Content */
+        .container { padding: 4rem 5%; }
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+        .page-header p { max-width: 800px; margin: 0 auto; color: #555; }
+
+        .grant-table-container { overflow-x: auto; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th { background: var(--deep-black); color: var(--primary-gold); padding: 20px; font-size: 0.85rem; text-transform: uppercase; }
+        td { padding: 20px; border-bottom: 1px solid #eee; font-size: 0.9rem; vertical-align: top; }
+        tr:hover { background-color: #fcf9f2; }
+
+        .amount { font-weight: 700; color: #2e7d32; }
+        .alignment-note { font-style: italic; color: #666; font-size: 0.85rem; margin-top: 8px; display: block; }
+
+        footer { background: var(--deep-black); color: #a1a1aa; padding: 60px 10% 20px; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html" style="color: var(--primary-gold);">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Grant Alignment Matrix</h1>
+            <p>Koinonia Grace Foundation identifies strategic partners whose mission for community safety and child welfare coincides with our verification incentives.</p>
+        </div>
+
+        <div class="grant-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Organization & Grant Name</th>
+                        <th>Award Amount</th>
+                        <th>Philly Initiative Focus</th>
+                        <th>Requirement & KGF Alignment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>William Penn Foundation</strong><br>Children & Families Grant</td>
+                        <td class="amount">$50,000 - $250,000</td>
+                        <td>Early childhood stability.</td>
+                        <td>Focuses on caregiver readiness. <span class="alignment-note">KGF aligns by providing verified, trauma-informed foster parents.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Philadelphia Foundation</strong><br>Henrietta Tower Wurts Grant</td>
+                        <td class="amount">Up to $10,000</td>
+                        <td>Disadvantaged youth support.</td>
+                        <td>Requires direct community impact. <span class="alignment-note">KGF aligns via our "Philly Resource Badge" for parents.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>The Pew Charitable Trusts</strong><br>Philadelphia Program</td>
+                        <td class="amount">$100,000+</td>
+                        <td>Health and Human Services.</td>
+                        <td>Requires systemic improvement. <span class="alignment-note">KGF aligns by professionalizing the vetting process.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Patricia Kind Family Foundation</strong><br>Operating Support Grant</td>
+                        <td class="amount">$10,000 - $50,000</td>
+                        <td>Mental health and basic needs.</td>
+                        <td>Supports wrap-around services. <span class="alignment-note">KGF aligns through our Behavioral Management Certification.</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bread & Roses Community Fund</strong><br>Racial & Economic Justice Grant</td>
+                        <td class="amount">$5,000 - $20,000</td>
+                        <td>Black-led community safety.</td>
+                        <td>Requires grassroots leadership. <span class="alignment-note">KGF aligns through our Tbblusa.org lineage and racial equity focus.</span></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Fully Institutional Standards.</p>
+    </footer>
+
+</body>
+</html>
