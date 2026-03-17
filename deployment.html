@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Command Center | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand-group img { height: 110px; width: auto; }
+
+        .container { padding: 4rem 5%; max-width: 1000px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; }
+
+        .checklist-section { background: white; padding: 40px; border-radius: 4px; border: 1px solid #eee; margin-bottom: 30px; }
+        .checklist-section h2 { font-family: 'Playfair Display', serif; margin-bottom: 20px; color: var(--deep-black); border-bottom: 2px solid var(--primary-gold); display: inline-block; }
+        
+        .task-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; padding: 15px; border-radius: 4px; background: #f9f9f9; }
+        .task-item input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--primary-gold); margin-top: 5px; }
+        .task-text h4 { font-size: 1rem; margin-bottom: 5px; }
+        .task-text p { font-size: 0.85rem; color: #666; }
+
+        .deployment-alert { background: #fff5f5; border: 1px solid #feb2b2; color: #c53030; padding: 20px; border-radius: 4px; margin-bottom: 40px; font-weight: 700; display: flex; align-items: center; gap: 15px; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <img src="KGF.png" alt="Koinonia Grace Foundation Logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Institutional Launch Checklist</h1>
+            <p>Finalizing the digital infrastructure for Philadelphia's foster care protectors.</p>
+        </div>
+
+        <div class="deployment-alert">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>Warning: Ensure the Tbblusa.org redirection is active before Phase 3 of deployment.</span>
+        </div>
+
+        <section class="checklist-section">
+            <h2>Phase 1: Domain & Hosting</h2>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Secure koinoniagrace.org</h4>
+                    <p>Purchase the primary domain through a government-compliant registrar.</p>
+                </div>
+            </div>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Configure SSL Certification</h4>
+                    <p>Enable HTTPS to ensure the Verification Shop and Member Portal are secure for financial transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="checklist-section">
+            <h2>Phase 2: Asset Implementation</h2>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Upload KGF.png</h4>
+                    <p>Ensure the logo file is uploaded at exactly 2x standard height for consistent branding across all 13 pages.</p>
+                </div>
+            </div>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Integrate Payment Gateway</h4>
+                    <p>Connect the "Buy Certificate" buttons on verification.html to your Stripe or PayPal Business account.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="checklist-section">
+            <h2>Phase 3: Public Launch</h2>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Submit sitemap.xml</h4>
+                    <p>Upload the sitemap to Google Search Console to index the foundation for Philadelphia search queries.</p>
+                </div>
+            </div>
+            <div class="task-item">
+                <input type="checkbox">
+                <div class="task-text">
+                    <h4>Initiate Grantor Outreach</h4>
+                    <p>Email the specific link to grants.html to the 25 identified grant organizations.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. Mission Ready.</p>
+    </footer>
+
+</body>
+</html>
