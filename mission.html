@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.8; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Mission Content */
+        .mission-hero { background: var(--deep-black); color: white; padding: 100px 10%; text-align: center; }
+        .mission-hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--primary-gold); margin-bottom: 20px; }
+        
+        .content-wrap { max-width: 900px; margin: 0 auto; padding: 80px 5%; }
+        .origin-story { border-left: 4px solid var(--primary-gold); padding-left: 30px; margin-bottom: 50px; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 25px; }
+        
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 50px 0; }
+        .stat-box { background: white; padding: 30px; border: 1px solid #ddd; text-align: center; }
+        .stat-box h4 { font-size: 2.5rem; color: var(--primary-gold); margin-bottom: 10px; }
+
+        .call-to-action { background: var(--primary-gold); color: var(--deep-black); padding: 60px; text-align: center; border-radius: 4px; }
+        .btn-white { display: inline-block; background: var(--deep-black); color: white; padding: 15px 40px; text-decoration: none; font-weight: 700; margin-top: 20px; border-radius: 4px; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html" style="color: var(--primary-gold);">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mission-hero">
+        <h1>Institutional Integrity</h1>
+        <p>A Philadelphia-based nonprofit strengthening the future through verified protection.</p>
+    </section>
+
+    <main class="content-wrap">
+        <article class="origin-story">
+            <h2>From Tbblusa.org to Koinonia Grace</h2>
+            <p>Koinonia Grace Foundation is a Philadelphia-based nonprofit organization spawned from the legacy of Tbblusa.org to champion the safety and development of underserved youth. We leverage the strength of the Thin Black and Brown Line USA to create a secure, disciplined, and high-integrity environment for children in need of foster care.</p>
+        </article>
+
+        <section>
+            <h2>The Philadelphia Challenge</h2>
+            <p>In our community, the foster care system faces a dire need for more than just beds—it needs verified protectors. We identify whether a person is properly fit to be a foster parent by offering verification and certifications that ensure they possess what is needed to lead, not just collect a check.</p>
+            
+            
+
+            <div class="stat-grid">
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>Integrity Verified Candidates</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Philly</h4>
+                    <p>Localized Support Network</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Support Our Mission</h2>
+            <p>Whether you are a citizen looking to donate or a government entity seeking a high-integrity partner to fund incentives, your support completes our mission.</p>
+            <a href="donate.html" class="btn-white">Make a Donation</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Spawned from Tbblusa.org.</p>
+    </footer>
+
+</body>
+</html>
