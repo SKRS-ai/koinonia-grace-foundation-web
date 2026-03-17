@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support the Mission | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Donation Layout */
+        .container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 5rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+
+        .funding-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        
+        /* Donation Cards */
+        .funding-card { background: white; padding: 40px; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .funding-card.highlight { border: 2px solid var(--primary-gold); position: relative; }
+        .funding-card.highlight::after { content: "MOST CRITICAL"; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary-gold); color: var(--deep-black); padding: 5px 15px; font-size: 0.7rem; font-weight: 800; border-radius: 20px; }
+
+        .funding-card h2 { font-family: 'Playfair Display', serif; margin-bottom: 15px; }
+        .funding-card p { font-size: 0.95rem; color: #555; margin-bottom: 25px; }
+        
+        .amount-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
+        .amount-btn { border: 1px solid #ddd; padding: 12px; text-align: center; cursor: pointer; font-weight: 700; transition: 0.2s; }
+        .amount-btn:hover { border-color: var(--primary-gold); color: var(--primary-gold); }
+        
+        .btn-submit { display: block; width: 100%; padding: 15px; background: var(--deep-black); color: var(--primary-gold); text-align: center; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-submit:hover { background: #222; }
+
+        /* Institutional Section */
+        .institutional-box { background: var(--deep-black); color: white; padding: 60px; margin-top: 60px; border-radius: 4px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: center; }
+        .institutional-box h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--primary-gold); margin-bottom: 15px; }
+        .btn-outline { display: inline-block; padding: 15px 30px; border: 2px solid var(--primary-gold); color: var(--primary-gold); text-decoration: none; font-weight: 700; text-align: center; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Invest in Integrity</h1>
+            <p>Every contribution directly funds the identification, vetting, and certification of Philadelphia's foster parents.</p>
+        </div>
+
+        <div class="funding-grid">
+            <div class="funding-card">
+                <h2>Citizen Contributions</h2>
+                <p>Support the community-led vetting process spawned from Tbblusa.org. Your gift ensures a child is placed with a verified protector.</p>
+                <div class="amount-options">
+                    <div class="amount-btn">$25</div>
+                    <div class="amount-btn">$50</div>
+                    <div class="amount-btn">$100</div>
+                    <div class="amount-btn">Other</div>
+                </div>
+                <a href="#" class="btn-submit">Process Donation</a>
+            </div>
+
+            <div class="funding-card highlight">
+                <h2>Scholarship Fund</h2>
+                <p>Fund the verification products for a foster parent candidate. This removes the financial barrier for high-integrity protectors.</p>
+                <div class="amount-options">
+                    <div class="amount-btn">$150</div>
+                    <div class="amount-btn">$300</div>
+                    <div class="amount-btn">$500</div>
+                    <div class="amount-btn">Other</div>
+                </div>
+                <a href="#" class="btn-submit">Fund a Certification</a>
+            </div>
+        </div>
+
+        <div class="institutional-box">
+            <div>
+                <h3>Government & Corporate Giving</h3>
+                <p>For Philadelphia-based institutions, government departments, and foundations looking to fund large-scale incentives or fulfill grant alignment requirements. We offer audited reporting on all institutional funds.</p>
+            </div>
+            <a href="mailto:grants@koinoniagrace.org" class="btn-outline">Incentive Proposal</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. 501(c)(3) Fiscal Responsibility.</p>
+    </footer>
+
+</body>
+</html>
