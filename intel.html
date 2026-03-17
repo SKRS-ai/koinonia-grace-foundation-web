@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Intelligence | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --graph-bg: #1a1a1a;
+            --success-green: #48bb78;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #000; color: #fff; padding: 40px 5%; }
+
+        header.intel-nav { border-bottom: 1px solid #333; padding-bottom: 20px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; }
+        .logo-small { height: 60px; filter: grayscale(1) brightness(2); }
+
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .intel-card { background: var(--graph-bg); border: 1px solid #333; padding: 25px; border-radius: 4px; }
+        .intel-card h3 { font-size: 0.75rem; color: var(--primary-gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .intel-card .value { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 5px; }
+        .intel-card .trend { font-size: 0.8rem; color: var(--success-green); }
+
+        .map-section { background: var(--graph-bg); border: 1px solid #333; padding: 40px; border-radius: 4px; margin-bottom: 40px; }
+        .map-placeholder { height: 300px; background: #222; border: 1px dashed #444; display: flex; align-items: center; justify-content: center; color: #666; font-family: 'JetBrains Mono', monospace; }
+
+        .log-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .log-table th { text-align: left; padding: 15px; border-bottom: 2px solid #333; color: var(--primary-gold); }
+        .log-table td { padding: 15px; border-bottom: 1px solid #222; color: #aaa; }
+        .status-pill { background: #333; padding: 3px 8px; border-radius: 2px; font-size: 0.7rem; color: #fff; }
+
+        footer { text-align: center; color: #444; font-size: 0.7rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header class="intel-nav">
+        <img src="KGF.png" alt="KGF Logo" class="logo-small">
+        <div style="text-align: right;">
+            <p style="font-weight: 700; color: var(--primary-gold);">COMMAND CENTER</p>
+            <p style="font-size: 0.7rem; color: #666;">ACCESS: LEVEL 5 / EXECUTIVE</p>
+        </div>
+    </header>
+
+    <div class="dashboard-grid">
+        <div class="intel-card">
+            <h3>Active Verifications</h3>
+            <div class="value">142</div>
+            <div class="trend"><i class="fas fa-caret-up"></i> 12% vs LY</div>
+        </div>
+        <div class="intel-card">
+            <h3>Scholarships Issued</h3>
+            <div class="value">$84,500</div>
+            <div class="trend"><i class="fas fa-caret-up"></i> 5 Active Grants</div>
+        </div>
+        <div class="intel-card">
+            <h3>Integrity Index (Citywide)</h3>
+            <div class="value">9.4</div>
+            <div class="trend" style="color: #666;">Institutional Target: 9.0</div>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h3 style="color: var(--primary-gold); margin-bottom: 20px;">Protector Density: Philadelphia County</h3>
+        <div class="map-placeholder">
+            [GEO-SPATIAL HEATMAP: INTEGRITY LEVELS 1-3 BY ZIP CODE]
+        </div>
+    </div>
+
+    <div class="intel-card" style="width: 100%;">
+        <h3 style="margin-bottom: 20px;">Real-Time Verification Log</h3>
+        <table class="log-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Member ID</th>
+                    <th>Product Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2026-03-16 14:22</td>
+                    <td>KGF-PHL-9921</td>
+                    <td>Tier 3 Elite Protector</td>
+                    <td><span class="status-pill" style="background: var(--success-green);">VERIFIED</span></td>
+                </tr>
+                <tr>
+                    <td>2026-03-16 13:05</td>
+                    <td>KGF-PHL-8842</td>
+                    <td>Foundational Integrity</td>
+                    <td><span class="status-pill">IN REVIEW</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All data encrypted. Unauthorized access is a violation of the Tbblusa Ethics Code.</p>
+    </footer>
+
+</body>
+</html>
