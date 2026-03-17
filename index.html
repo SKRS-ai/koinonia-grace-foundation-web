@@ -38,7 +38,7 @@
         /* Navigation Header */
         header.main-nav {
             background: var(--deep-black);
-            padding: 1.2rem 5%;
+            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -47,17 +47,21 @@
             z-index: 1000;
             box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
-        .brand-group { display: flex; align-items: center; gap: 15px; }
-        .logo-text { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--pure-white); letter-spacing: 1px; }
-        .logo-text span { color: var(--primary-gold); }
+        
+        /* Updated Logo Placement */
+        .brand-group img {
+            height: 55px; /* Perfect height for top-left visibility */
+            width: auto;
+            display: block;
+        }
 
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: 0.3s; text-transform: uppercase; letter-spacing: 0.5px; }
         nav a:hover { color: var(--primary-gold); }
 
         .cta-group { display: flex; gap: 15px; align-items: center; }
-        .btn-portal { border: 1px solid var(--primary-gold); color: var(--primary-gold); padding: 8px 18px; border-radius: 4px; font-size: 0.85rem; }
-        .btn-donate { background: var(--primary-gold); color: var(--deep-black); padding: 10px 22px; border-radius: 4px; font-weight: 700; box-shadow: 0 4px 10px rgba(197, 160, 89, 0.3); }
+        .btn-portal { border: 1px solid var(--primary-gold); color: var(--primary-gold); padding: 8px 18px; border-radius: 4px; font-size: 0.85rem; text-decoration: none; }
+        .btn-donate { background: var(--primary-gold); color: var(--deep-black); padding: 10px 22px; border-radius: 4px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 10px rgba(197, 160, 89, 0.3); }
 
         /* Hero: The Philadelphia Promise */
         .hero {
@@ -126,7 +130,9 @@
 
     <header class="main-nav">
         <div class="brand-group">
-            <div class="logo-text">KOINONIA <span>GRACE</span></div>
+            <a href="index.html">
+                <img src="KGF.png" alt="Koinonia Grace Foundation Logo">
+            </a>
         </div>
         <nav>
             <ul>
