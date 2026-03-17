@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press & Media Kit | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        .container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 5rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+
+        .kit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .kit-card { background: white; padding: 40px; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .kit-card h3 { font-family: 'Playfair Display', serif; margin-bottom: 15px; border-bottom: 2px solid var(--primary-gold); display: inline-block; }
+        
+        .copy-box { background: #f4f4f4; padding: 20px; font-size: 0.9rem; border-left: 3px solid var(--primary-gold); position: relative; margin-top: 10px; }
+        .btn-download { display: inline-block; margin-top: 20px; padding: 10px 20px; background: var(--deep-black); color: var(--primary-gold); text-decoration: none; font-weight: 700; font-size: 0.8rem; border-radius: 2px; }
+        
+        .logo-preview { background: #222; padding: 20px; text-align: center; margin-bottom: 15px; }
+        .logo-preview img { height: 50px; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Press & Media Kit</h1>
+            <p>Official assets and approved statements for Koinonia Grace Foundation.</p>
+        </div>
+
+        <div class="kit-grid">
+            <div class="kit-card">
+                <h3>Visual Identity</h3>
+                <p>Use our official logo for all print and digital mentions. Do not alter the proportions.</p>
+                <div class="logo-preview">
+                    <img src="KGF.png" alt="KGF Logo Preview">
+                </div>
+                <a href="KGF.png" download class="btn-download"><i class="fas fa-download"></i> Download PNG</a>
+            </div>
+
+            <div class="kit-card">
+                <h3>Official Copy</h3>
+                <p>Approved 1-sentence explanation:</p>
+                <div class="copy-box">
+                    "Koinonia Grace Foundation is a Philadelphia-based nonprofit that strengthens the foster care system by implementing rigorous digital verification standards to certify high-integrity protectors for underserved youth."
+                </div>
+                <p style="margin-top:20px;">Approved 3-sentence statement:</p>
+                <div class="copy-box">
+                    "Koinonia Grace Foundation is a Philadelphia-based nonprofit organization spawned from the legacy of Tbblusa.org to champion the safety and development of underserved youth. We implement rigorous, competency-based digital verification standards to identify and certify high-integrity foster parents who are prepared for the serious responsibility of child protection. By bridging the gap between vulnerable children and verified caregivers, we provide the strategic direction and community support necessary to build stable, flourishing futures."
+                </div>
+            </div>
+
+            <div class="kit-card">
+                <h3>Leadership & Origin</h3>
+                <p>Koinonia Grace Foundation was spawned from the <strong>Thin Black and Brown Line USA (Tbblusa.org)</strong> to address specific integrity gaps in the foster care system.</p>
+                <a href="mission.html" class="btn-download">Full Origin Story</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Media Relations: press@koinoniagrace.org</p>
+    </footer>
+
+</body>
+</html>
