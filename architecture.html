@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Architecture | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --system-blue: #2b6cb0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: var(--deep-black); padding: 50px 5%; }
+
+        .arch-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .arch-header { background: var(--deep-black); color: white; padding: 40px; border-bottom: 4px solid var(--primary-gold); }
+        
+        .flow-section { padding: 40px; border-bottom: 1px solid #eee; }
+        .flow-section h2 { font-size: 1.2rem; text-transform: uppercase; margin-bottom: 20px; color: var(--system-blue); }
+        
+        .tech-stack { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .stack-item { background: #fafafa; padding: 20px; border: 1px solid #ddd; text-align: center; }
+        .stack-item strong { display: block; font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; color: var(--deep-black); }
+        .stack-item span { font-size: 0.75rem; color: #666; text-transform: uppercase; }
+
+        .logic-map { background: #1e1e1e; color: #dcdcdc; padding: 30px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; border-radius: 4px; line-height: 1.5; }
+        .logic-map b { color: var(--primary-gold); }
+
+        footer { padding: 30px; text-align: center; font-size: 0.8rem; color: #999; }
+    </style>
+</head>
+<body>
+
+    <div class="arch-container">
+        <div class="arch-header">
+            <h1>System Architecture</h1>
+            <p>Data Flow Logic for Philadelphia Protector Verifications</p>
+        </div>
+
+        <section class="flow-section">
+            <h2>I. The Stack</h2>
+            <div class="tech-stack">
+                <div class="stack-item">
+                    <span>Front-End</span>
+                    <strong>HTML5 / CSS3</strong>
+                </div>
+                <div class="stack-item">
+                    <span>Secure Logic</span>
+                    <strong>JavaScript / SSL</strong>
+                </div>
+                <div class="stack-item">
+                    <span>Database</span>
+                    <strong>PostgreSQL</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="flow-section">
+            <h2>II. Verification Logic Flow</h2>
+            <div class="logic-map">
+                [USER] -> <b>verification.html</b> (Select Product)<br>
+                [API]  -> <b>Stripe/PayPal</b> (Secure Payment Processing)<br>
+                [DB]   -> <b>Update MemberID</b> (Status: "Pending Verification")<br>
+                [ADMIN]-> <b>Briefing Tool</b> (Approve Integrity Level)<br>
+                [USER] -> <b>membership.html</b> (Digital Badge Issued)<br>
+                [PUBLIC]-> <b>directory.html</b> (Record Live for Placement)
+            </div>
+        </section>
+
+        <section class="flow-section">
+            <h2>III. Security Protocol</h2>
+            <p>All data is encrypted using <b>AES-256</b>. Access to the <b>Partner Portal</b> requires multi-factor authentication (MFA). This ensures that the heritage of <strong>Tbblusa.org</strong> is protected by the highest modern security standards.</p>
+        </section>
+
+        <footer>
+            &copy; 2026 Koinonia Grace Foundation Technical Documentation.
+        </footer>
+    </div>
+
+</body>
+</html>
