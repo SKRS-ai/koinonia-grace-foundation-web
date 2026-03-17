@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Roadmap | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        .container { padding: 4rem 5%; max-width: 1000px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 5rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; }
+
+        /* Roadmap Timeline */
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline::before { content: ''; position: absolute; left: 31px; top: 0; bottom: 0; width: 2px; background: #ddd; }
+        
+        .milestone { position: relative; margin-bottom: 60px; padding-left: 80px; }
+        .milestone-dot { position: absolute; left: 20px; top: 5px; width: 24px; height: 24px; background: var(--deep-black); border: 4px solid var(--primary-gold); border-radius: 50%; z-index: 2; }
+        
+        .milestone-content { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .milestone-date { font-weight: 800; color: var(--primary-gold); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .milestone-content h3 { font-family: 'Playfair Display', serif; margin: 10px 0; font-size: 1.5rem; }
+        .milestone-content ul { list-style: none; margin-top: 15px; }
+        .milestone-content li { margin-bottom: 8px; font-size: 0.9rem; padding-left: 20px; position: relative; }
+        .milestone-content li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-gold); font-weight: bold; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Strategic Roadmap</h1>
+            <p>Phase-based scaling for institutional foster care integrity.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="milestone">
+                <div class="milestone-dot"></div>
+                <div class="milestone-content">
+                    <span class="milestone-date">Phase 1: Foundation (2026)</span>
+                    <h3>Establishment & Philadelphia Launch</h3>
+                    <ul>
+                        <li>Spawn from Tbblusa.org finalized.</li>
+                        <li>Launch of 20+ Digital Verification Products.</li>
+                        <li>Activation of 25 Strategic Grant Alignments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <div class="milestone-dot"></div>
+                <div class="milestone-content">
+                    <span class="milestone-date">Phase 2: Expansion (2027)</span>
+                    <h3>Tri-State Integration</h3>
+                    <ul>
+                        <li>Onboarding 500+ Integrity-Verified Protectors.</li>
+                        <li>Partnering with Pennsylvania and Delaware DHS.</li>
+                        <li>Establishing the "Foster Identity" Legal Database.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="milestone">
+                <div class="milestone-dot"></div>
+                <div class="milestone-content">
+                    <span class="milestone-date">Phase 3: Institutionalization (2028)</span>
+                    <h3>National Standard Advocacy</h3>
+                    <ul>
+                        <li>Proposing KGF Verification as a federal requirement.</li>
+                        <li>Launching the National Protector Endowment.</li>
+                        <li>Achieving 100% sustainable funding via digital product shop.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. Strategic Vision for Community Safety.</p>
+    </footer>
+
+</body>
+</html>
