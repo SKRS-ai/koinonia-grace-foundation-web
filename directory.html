@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protector Directory | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --pure-white: #ffffff;
+            --soft-cream: #fafafa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); line-height: 1.6; }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        .container { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 10px; }
+
+        /* Search & Filter bar */
+        .filter-bar { background: white; padding: 25px; border-radius: 4px; display: flex; gap: 20px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .filter-bar input, .filter-bar select { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 2px; }
+
+        /* Directory Cards */
+        .directory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .member-card { background: white; border: 1px solid #eee; padding: 30px; position: relative; transition: 0.3s; }
+        .member-card:hover { border-color: var(--primary-gold); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        
+        .integrity-badge { position: absolute; top: 20px; right: 20px; color: var(--primary-gold); font-size: 1.2rem; }
+        .member-info h3 { font-family: 'Playfair Display', serif; margin-bottom: 5px; font-size: 1.3rem; }
+        .member-info p { font-size: 0.85rem; color: #666; margin-bottom: 15px; }
+        
+        .cert-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+        .cert-tag { background: #f0f0f0; padding: 4px 10px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; border-radius: 2px; }
+        .cert-tag.gold { background: var(--primary-gold); color: white; }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Verified Protector Directory</h1>
+            <p>Identifying Philadelphia’s high-integrity caregivers for placement verification.</p>
+        </div>
+
+        <div class="filter-bar">
+            <input type="text" placeholder="Search by Member ID or Region...">
+            <select>
+                <option>All Integrity Tiers</option>
+                <option>Tier 3: Elite Protector</option>
+                <option>Tier 2: Advanced Care</option>
+                <option>Tier 1: Foundational</option>
+            </select>
+        </div>
+
+        <div class="directory-grid">
+            <div class="member-card">
+                <div class="integrity-badge"><i class="fas fa-shield-alt"></i></div>
+                <div class="member-info">
+                    <h3>Member #8821</h3>
+                    <p>North Philadelphia Region</p>
+                    <div class="cert-tags">
+                        <span class="cert-tag gold">Tier 3</span>
+                        <span class="cert-tag">Tbblusa Aligned</span>
+                        <span class="cert-tag">Trauma-Informed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="integrity-badge" style="color: #ccc;"><i class="fas fa-shield-alt"></i></div>
+                <div class="member-info">
+                    <h3>Member #9410</h3>
+                    <p>South Philadelphia Region</p>
+                    <div class="cert-tags">
+                        <span class="cert-tag">Tier 1</span>
+                        <span class="cert-tag">Philly Navigator</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="integrity-badge" style="color: silver;"><i class="fas fa-shield-alt"></i></div>
+                <div class="member-info">
+                    <h3>Member #7732</h3>
+                    <p>West Philadelphia Region</p>
+                    <div class="cert-tags">
+                        <span class="cert-tag" style="background: silver; color: white;">Tier 2</span>
+                        <span class="cert-tag">Behavioral Cert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. Registry of Verified Protectors.</p>
+    </footer>
+
+</body>
+</html>
