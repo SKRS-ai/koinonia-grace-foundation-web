@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Suite | Koinonia Grace Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --deep-black: #0f0f0f;
+            --soft-cream: #fafafa;
+            --pure-white: #ffffff;
+            --success-green: #2e7d32;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--soft-cream); color: var(--deep-black); }
+
+        /* Global Header with 2x Logo */
+        header.main-nav {
+            background: var(--deep-black);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .brand-group img { height: 110px; width: auto; display: block; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Shop Layout */
+        .shop-container { padding: 4rem 5%; max-width: 1400px; margin: 0 auto; }
+        .shop-header { text-align: center; margin-bottom: 5rem; }
+        .shop-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+        
+        /* Product Categories */
+        .category-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.8rem; 
+            margin: 3rem 0 1.5rem; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--primary-gold);
+            display: inline-block;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .product-card { 
+            background: var(--pure-white); 
+            padding: 30px; 
+            border: 1px solid #eee; 
+            position: relative;
+            transition: 0.3s ease;
+        }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        
+        .badge-type { 
+            font-size: 0.7rem; 
+            text-transform: uppercase; 
+            font-weight: 800; 
+            color: var(--primary-gold); 
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .price { font-size: 1.4rem; font-weight: 700; margin: 15px 0; color: var(--deep-black); }
+        .product-card h3 { font-family: 'Playfair Display', serif; margin-bottom: 10px; }
+        .product-card p { font-size: 0.9rem; color: #666; margin-bottom: 20px; line-height: 1.4; }
+
+        .btn-buy { 
+            display: block; 
+            width: 100%; 
+            padding: 12px; 
+            background: var(--deep-black); 
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+        .btn-buy:hover { background: var(--primary-gold); color: var(--deep-black); }
+
+        footer { background: var(--deep-black); color: #888; padding: 4rem 5%; text-align: center; margin-top: 5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="main-nav">
+        <div class="brand-group">
+            <a href="index.html"><img src="KGF.png" alt="Koinonia Grace Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grants.html">Grant Alignment</a></li>
+                <li><a href="verification.html" style="color: var(--primary-gold);">Verification Shop</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="shop-container">
+        <div class="shop-header">
+            <h1>Verification & Certification Suite</h1>
+            <p>Elevate your application status with institutional-grade foster parent certifications.</p>
+        </div>
+
+        <h2 class="category-title">Tier 1: Integrity Foundations</h2>
+        <div class="grid">
+            <div class="product-card">
+                <span class="badge-type">Level 1 Identity</span>
+                <h3>Integrity Pledge Certification</h3>
+                <p>Digital certificate verifying a sworn commitment to non-transactional child care.</p>
+                <div class="price">$25.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+            <div class="product-card">
+                <span class="badge-type">Heritage Alignment</span>
+                <h3>Tbblusa Cultural Competency</h3>
+                <p>Verification of readiness for care within Black and Brown community lineages.</p>
+                <div class="price">$45.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+            <div class="product-card">
+                <span class="badge-type">Local Vetting</span>
+                <h3>Philly Resource Navigator</h3>
+                <p>Certification of knowledge regarding Philadelphia-specific DHS systems and local supports.</p>
+                <div class="price">$35.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+        </div>
+
+        <h2 class="category-title">Tier 2: Clinical & Behavioral Competency</h2>
+        <div class="grid">
+            <div class="product-card">
+                <span class="badge-type">Behavioral Level 1</span>
+                <h3>De-escalation Specialist</h3>
+                <p>Digital badge verifying completion of advanced crisis management training.</p>
+                <div class="price">$75.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+            <div class="product-card">
+                <span class="badge-type">Clinical Awareness</span>
+                <h3>Trauma-Informed Care (Bronze)</h3>
+                <p>Verification of understanding the psychological impact of childhood displacement.</p>
+                <div class="price">$60.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+            <div class="product-card">
+                <span class="badge-type">Health & Safety</span>
+                <h3>Nutritional Safety Certificate</h3>
+                <p>Specialized certification for caring for children with medically complex nutritional needs.</p>
+                <div class="price">$40.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+        </div>
+
+        <h2 class="category-title">Tier 3: Institutional Elite Protectors</h2>
+        <div class="grid">
+            <div class="product-card">
+                <span class="badge-type">Elite Integrity</span>
+                <h3>KGF Gold Standard Credential</h3>
+                <p>Our highest level of verification, including home-audit readiness and character references.</p>
+                <div class="price">$150.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+            <div class="product-card">
+                <span class="badge-type">Educational Advocacy</span>
+                <h3>IEP/School District Advocate</h3>
+                <p>Verifies the parent's ability to navigate the Philadelphia School District for special education.</p>
+                <div class="price">$85.00</div>
+                <a href="#" class="btn-buy">Add to Application</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Koinonia Grace Foundation. All Rights Reserved. Professional Integrity Standards.</p>
+    </footer>
+
+</body>
+</html>
